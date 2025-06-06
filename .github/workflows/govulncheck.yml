@@ -2,11 +2,11 @@ name: Govulncheck
 
 on:
   push:
-    branches:
-      - main
+    branches: [ "master" ]
   pull_request:
-    branches:
-      - main
+    branches: [ "master" ]
+  schedule:
+    - cron: '37 2 * * 0'
 
 permissions:
   contents: read
